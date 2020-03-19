@@ -1,12 +1,12 @@
-import config from "@/assets/config/config.json";
 import {
   AgentConnectionInterface,
   AgentConnectionStatusInterface
 } from "@/models/api";
 import { Connection, ConnectionStatus } from "@/models/connection";
 import { ConnectionState, RootState } from "@/models/storeState";
+import *config from "appConfig";
 import Axios from "axios";
-import { ActionTree, ActionContext } from "vuex";
+import { ActionContext, ActionTree } from "vuex";
 
 export const actions: ActionTree<ConnectionState, RootState> = {
   getNewConnection(

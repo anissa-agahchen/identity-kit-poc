@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import config from "@/assets/config/config.json";
+import *config from "appConfig";
 
 @Component
 export default class Footer extends Vue {

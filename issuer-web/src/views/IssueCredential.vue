@@ -66,8 +66,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import config from "@/assets/config/config.json";
-import { IssuerInvitationInterface } from "../models/api";
+import *config from "appConfig";
 import Axios from "axios";
 import { Connection } from "../models/connection";
 import { Credential } from "../models/credential";

@@ -23,10 +23,10 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import * as SurveyVue from "survey-vue";
-import claimConfig from "@/assets/config/claim-config.json";
 import { Credential, Claim } from "../models/credential";
 import { mapGetters } from "vuex";
+import * as SurveyVue from "survey-vue";
+import claimConfig from "claimConfig";
 
 @Component({
   computed: {

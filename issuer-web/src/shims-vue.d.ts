@@ -13,4 +13,21 @@ declare module "vue-qrcode" {
   export default qrcode;
 }
 
-declare module 'vuex-oidc';
+declare module "vuex-oidc";
+
+declare module "appConfig" {
+  import { AppConfig } from "@/models/appConfig";
+  const config: any;
+  export default config;
+}
+
+declare module "themeConfig" {
+  import { UserVuetifyPreset } from "vuetify";
+  const themeConfig: UserVuetifyPreset;
+  export default themeConfig;
+}
+
+declare module "claimConfig" {
+  const claimConfig: any;
+  export default claimConfig;
+}

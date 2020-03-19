@@ -1,11 +1,10 @@
-import { InvitationState, RootState } from "@/models/storeState";
-import { ActionTree, ActionContext } from "vuex";
-import { Route } from "vue-router";
-import config from "@/assets/config/config.json";
-import Axios from "axios";
 import { IssuerInvitationInterface } from "@/models/api";
 import { Invitation, InvitationStatus } from "@/models/invitation";
-import store from "@/store";
+import { InvitationState, RootState } from "@/models/storeState";
+import config from "appConfig";
+import Axios from "axios";
+import { Route } from "vue-router";
+import { ActionContext, ActionTree } from "vuex";
 
 function getInviteStatus(inviteData: {
   active: boolean;

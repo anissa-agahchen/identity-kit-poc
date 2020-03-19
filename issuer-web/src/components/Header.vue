@@ -11,7 +11,7 @@
         alt="Issuer Logo"
         class="shrink mr-2"
         contain
-        src="../assets/logo.png"
+        src="logo.png"
         transition="scale-transition"
         width="40"
       />
@@ -33,8 +33,8 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import config from "@/assets/config/config.json";
 import { mapActions, mapGetters } from "vuex";
+import *config from "appConfig";
 
 @Component({
   computed: {

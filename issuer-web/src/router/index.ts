@@ -1,9 +1,9 @@
-import config from "@/assets/config/config.json";
 import OidcCallback from "@/components/auth/OidcCallback.vue";
 import OidcCallbackError from "@/components/auth/OidcCallbackError.vue";
 import store from "@/store";
 import Home from "@/views/Home.vue";
 import Unauthorized from "@/views/Unauthorized.vue";
+import *config from "appConfig";
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import { vuexOidcCreateRouterMiddleware } from "vuex-oidc";
